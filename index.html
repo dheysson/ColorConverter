@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Color Converter</title>
-    <link rel="shortcut icon" href="https://bit.ly/3NdgqAW" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/222/222816.png" type="image/x-icon">
+    <link rel="stylesheet" href="src/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
@@ -15,34 +15,45 @@
 </head>
 
 <body>
-    <div id="wrapper">
-        <h1 id="head">
-            color converter
-        </h1>
 
+    <div id="wrapper">
+        
         <div id="wrapper__hex">
             <label for="hex">HEX</label>
-            <input maxlength="8" name="hex" type="text" id="hex">
+            <div class="wrapper__input">
+              <input maxlength="8" name="hex" type="text" id="hex">
+              <i class="fas fa-copy"></i>
+            </div>
         </div>
 
         <div id="wrapper__rgb">
             <label for="rgb">RGB</label>
-            <input name="rgb" type="text" id="rgb">
+            <div class="wrapper__input">
+              <input name="rgb" type="text" id="rgb">
+              <i class="fas fa-copy"></i>
+            </div>
         </div>
 
         <div id="wrapper__hsl">
             <label for="hsl">HSL</label>
-            <input name="hsl" type="text" id="hsl">
+            <div class="wrapper__input">
+              <input name="hsl" type="text" id="hsl">
+              <i class="fas fa-copy"></i>
+            </div>
+
         </div>
 
         <div id="wrapper__cmyk">
             <label for="cmyk">CMYK</label>
-            <input name="cmyk" type="text" id="cmyk">
+            <div class="wrapper__input">
+              <input name="cmyk" type="text" id="cmyk">
+              <i class="fas fa-copy"></i>
+            </div>
         </div>
 
-        <footer>
+        <!-- <footer>
             <a href="https://www.instagram.com/dheyssondev/" target="_blank">
-                <img src="https://bit.ly/3McSxJP" alt="Instagram">
+                <img src="https://icones.pro/wp-content/uploads/2021/02/instagram-icone-noir.png" alt="Instagram">
             </a>
 
             <a href="https://twitter.com/DheyssonFBI" target="_blank">
@@ -50,12 +61,11 @@
             </a>
 
             <a href="https://github.com/dheysson" target="_blank">
-                <img src="https://bit.ly/3l6lMlO" alt="GitHub">
+                <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
             </a>
-        </footer>
+        </footer> -->
     </div>
     
-    <script type="module" src="app.js"></script>
-    
+    <script type="module" src="src/app.js"></script>
 </body>
 </html>
