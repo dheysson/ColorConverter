@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Color Converter</title>
     <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/222/222816.png" type="image/x-icon">
-    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="assets/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
@@ -21,24 +21,24 @@
         <div id="wrapper__hex">
             <label for="hex">HEX</label>
             <div class="wrapper__input">
-              <input maxlength="8" name="hex" type="text" id="hex">
-              <i class="fas fa-copy"></i>
+              <input placeholder="#99AAFF" maxlength="8" name="hex" type="text" id="InputColor">
+              <i data-index="0" class="fas fa-copy"></i>
             </div>
         </div>
 
         <div id="wrapper__rgb">
             <label for="rgb">RGB</label>
             <div class="wrapper__input">
-              <input name="rgb" type="text" id="rgb">
-              <i class="fas fa-copy"></i>
+              <input placeholder="RGB(255, 255, 255)" name="rgb" type="text" id="InputColor">
+              <i data-index="1" class="fas fa-copy"></i>
             </div>
         </div>
 
         <div id="wrapper__hsl">
             <label for="hsl">HSL</label>
             <div class="wrapper__input">
-              <input name="hsl" type="text" id="hsl">
-              <i class="fas fa-copy"></i>
+              <input placeholder="HSL(360°, 100%, 100%)" name="hsl" type="text" id="InputColor">
+              <i data-index="2" class="fas fa-copy"></i>
             </div>
 
         </div>
@@ -46,8 +46,8 @@
         <div id="wrapper__cmyk">
             <label for="cmyk">CMYK</label>
             <div class="wrapper__input">
-              <input name="cmyk" type="text" id="cmyk">
-              <i class="fas fa-copy"></i>
+              <input placeholder="CMYK(100, 100, 100, 100)" name="cmyk" type="text" id="InputColor">
+              <i data-index="3" class="fas fa-copy"></i>
             </div>
         </div>
 
