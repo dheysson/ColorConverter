@@ -81,6 +81,7 @@ i.click{
 input {
     width: 260px;
     display: block;
+    text-transform: lowercase;
 
     background-color: hsl(hue, saturation, lightness);
 }
