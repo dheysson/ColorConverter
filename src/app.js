@@ -97,7 +97,7 @@ const converterColorValues = (rgb, inputName) => {
 
     if (inputName !== 'cmyk') {
       let cmyk = splitRGB(rgb);
-      inputs[3].value = `cmyk(${cmyk.c}, ${cmyk.m}, ${cmyk.y}, ${cmyk.k})`;
+      inputs[3].value = `cmyk(${Math.round(cmyk.c)}, ${Math.round(cmyk.m)}, ${Math.round(cmyk.y)}, ${Math.round(cmyk.k)})`;
     } else {
       let _cmyk = inputs[3].value;
       _cmyk = _cmyk.replace(/cmyk\(|\)/g,'');
@@ -106,7 +106,7 @@ const converterColorValues = (rgb, inputName) => {
       _cmyk = _cmyk.replace(' ','');
       _cmyk = _cmyk.split(',');
 
-      inputs[3].value = `cmyk(${_cmyk[0]}, ${_cmyk[1]}, ${_cmyk[2]}, ${_cmyk[3]})`
+      inputs[3].value = `cmyk(${Math.round(_cmyk[0])}, ${Math.round(_cmyk[1])}, ${Math.round(_cmyk[2])}, ${Math.round(_cmyk[3])})`
     }
 
   }  
